@@ -24,7 +24,7 @@ class GuestScreen extends Component {
         !this.props.guest.lastName ||
         !this.props.guest.checkIn ||
         !this.props.guest.checkOut ||
-        !this.props.guest.to ||
+        !this.props.guest.visiting ||
         !this.props.guest.badge
       ) {
       alert('Please, fill all inputs');

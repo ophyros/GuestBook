@@ -81,7 +81,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         guests: state.guests.map(guest => (
-            guest.id === action.id ? { ...guest, to: action.val} : guest
+            guest.id === action.id ? { ...guest, visiting: action.val} : guest
           ))
       }
     case CHANGE_BADGE:
